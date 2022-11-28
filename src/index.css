@@ -1,8 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
+  color: #33323D;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+p {
+  font-family: "Public Sans", sans-serif;
 }
 
 body {
   width: 100vw;
+}
+
+button {
+  cursor: pointer;
 }

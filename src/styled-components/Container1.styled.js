@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Containter1 = styled.header`
-    width: 85%;
+    width: 311px;
     height: 32px;
     display: flex;
     justify-content: space-between;
