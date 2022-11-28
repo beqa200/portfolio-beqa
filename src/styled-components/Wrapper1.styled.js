@@ -21,7 +21,7 @@ const Wrapper1 = styled.div`
     height: 48px;
     border: none;
     margin-top: 32px;
-    
+
     .div1 {
       width: 48px;
     }
@@ -33,22 +33,33 @@ const Wrapper1 = styled.div`
     }
 
     &:hover {
-        opacity: 0.9;
-       
+      opacity: 0.9;
     }
   }
 
   #about {
     margin-top: 70px;
-
+    border-bottom: 1px solid #d0c8c7;
+    height: 800px;
     .text {
-        margin-top: 30px;
-        border-top: 1px solid #D0C8C7 ;
-        
-        p{
-            opacity: 0.8;
-            margin-top: 28px;
-        }
+      margin-top: 30px;
+      border-top: 1px solid #d0c8c7;
+
+      p {
+        opacity: 0.8;
+        margin-top: 28px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-align: center;
+      padding-bottom: 40px;
     }
   }
 `;

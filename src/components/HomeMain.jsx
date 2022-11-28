@@ -7,6 +7,7 @@ import tablet2 from "../assets/images/homepage/tablet/profile.jpg";
 import desktop2 from "../assets/images/homepage/desktop/profile.jpg";
 import downArrows from "../assets/images/icons/down-arrows.svg";
 import Image from "./Images";
+import StyledButtons from "../styled-components/Buttons.styled";
 const HomeMain = () => {
   return (
     <Wrapper1>
@@ -36,6 +37,12 @@ const HomeMain = () => {
             with friends. I’d love you to check out my work.
           </p>
         </div>
+        <StyledButtons width={"202px"}>GO TO PORTFOLIO</StyledButtons>
+      </div>
+
+      <div className="contact">
+        <h1>Interested in doing a project together?</h1>
+        <StyledButtons width={"162px"}>CONTACT ME</StyledButtons>
       </div>
     </Wrapper1>
   );
