@@ -1,4 +1,5 @@
 import Images from "../styled-components/Images.styled";
+
 const Image = (props) => {
   return (
     <Images>

@@ -1,17 +1,19 @@
+import mobileHero from "../assets/images/homepage/mobile/image-homepage-hero.jpg";
+import tabletHero from "../assets/images/homepage/tablet/image-homepage-hero.jpg";
+import desktopHero from "../assets/images/homepage/desktop/image-homepage-hero.jpg";
+import mobileProfile from "../assets/images/homepage/mobile/profile.jpg";
+import tabletProfile from "../assets/images/homepage/tablet/profile.jpg";
+import desktopProfile from "../assets/images/homepage/desktop/profile.jpg";
+
 import Wrapper1 from "../styled-components/Wrapper1.styled";
-import mobile1 from "../assets/images/homepage/mobile/image-homepage-hero.jpg";
-import tablet1 from "../assets/images/homepage/tablet/image-homepage-hero.jpg";
-import desktop1 from "../assets/images/homepage/desktop/image-homepage-hero.jpg";
-import mobile2 from "../assets/images/homepage/mobile/profile.jpg";
-import tablet2 from "../assets/images/homepage/tablet/profile.jpg";
-import desktop2 from "../assets/images/homepage/desktop/profile.jpg";
 import downArrows from "../assets/images/icons/down-arrows.svg";
 import Image from "./Images";
 import StyledButtons from "../styled-components/Buttons.styled";
+
 const HomeMain = () => {
   return (
     <Wrapper1>
-      <Image mobile={mobile1} tablet={tablet1} desktop={desktop1} />
+      <Image mobile={mobileHero} tablet={tabletHero} desktop={desktopHero} />
 
       <h1>Hey, I’m Beka Maisuradze, Front-End Developer.</h1>
       <a href="#about">
@@ -23,7 +25,11 @@ const HomeMain = () => {
         </button>
       </a>
       <div id="about">
-        <Image mobile={mobile2} tablet={tablet2} desktop={desktop2} />
+        <Image
+          mobile={mobileProfile}
+          tablet={tabletProfile}
+          desktop={desktopProfile}
+        />
         <div className="text">
           <h1>About Me</h1>
           <p>

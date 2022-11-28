@@ -21,10 +21,10 @@ const FooterWrap = styled.footer`
     letter-spacing: 2px;
   }
 
-  div{
+  div {
     display: flex;
     width: 95px;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
 `;
 
