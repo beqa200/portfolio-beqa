@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Containter1 = styled.header`
+const HeaderWrap = styled.header`
     width: 311px;
     height: 32px;
     display: flex;
@@ -14,4 +14,4 @@ const Containter1 = styled.header`
     
 `
 
-export default Containter1;
+export default HeaderWrap;
