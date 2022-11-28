@@ -1,6 +1,6 @@
-import mobileHero from "../assets/images/homepage/mobile/image-homepage-hero.jpg";
-import tabletHero from "../assets/images/homepage/tablet/image-homepage-hero.jpg";
-import desktopHero from "../assets/images/homepage/desktop/image-homepage-hero.jpg";
+import mobileHero from "../assets/images/homepage/mobile/hero2.jpg";
+import tabletHero from "../assets/images/homepage/tablet/hero2.jpg";
+import desktopHero from "../assets/images/homepage/desktop/hero2.jpg";
 import mobileProfile from "../assets/images/homepage/mobile/profile.jpg";
 import tabletProfile from "../assets/images/homepage/tablet/profile.jpg";
 import desktopProfile from "../assets/images/homepage/desktop/profile.jpg";
@@ -13,7 +13,7 @@ import StyledButtons from "../styled-components/Buttons.styled";
 const HomeMain = () => {
   return (
     <Wrapper1>
-      <Image mobile={mobileHero} tablet={tabletHero} desktop={desktopHero} />
+      
 
       <h1>Hey, I’m Beka Maisuradze, Front-End Developer.</h1>
       <a href="#about">

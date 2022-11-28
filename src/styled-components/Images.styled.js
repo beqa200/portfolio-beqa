@@ -11,6 +11,7 @@ const Images = styled.div`
   }
   .tablet {
     display: none;
+    width: 700px;
   }
 
   .desktop {
@@ -27,6 +28,19 @@ const Images = styled.div`
 
     .desktop {
       display: none;
+    }
+  }
+  @media (min-width: 1100px) {
+    .mobile {
+      display: none;
+    }
+
+    .tablet {
+      display: none;
+    }
+
+    .desktop {
+      display: initial;
     }
   }
 `;
