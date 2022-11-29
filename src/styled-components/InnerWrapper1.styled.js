@@ -5,7 +5,7 @@ const InnerWrapper1 = styled.div`
   @media (min-width: 740px) {
     display: flex;
     justify-content: space-between;
-    flex-direction: ${(props) => (props.num % 2 == 0 ? "row-reverse" : "row")};
+    flex-direction: ${(props) => (props.num % 2 == 0 ? "row" : "row-reverse")};
     align-items: center;
     width: 700px;
   }
@@ -18,6 +18,7 @@ const InnerWrapper1 = styled.div`
     width: 300px;
     height: 320px;
     margin-top: 30px;
+    border-radius: 10px;
     @media (min-width: 740px) {
       max-width: 400px;
       height: 330px;
