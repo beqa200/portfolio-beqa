@@ -4,7 +4,8 @@ const Index = () => {
   return (
     <Wrapper2>
       <Header />
-      <Project proj={'tictactoe'}/>
+      <Project number={0} proj={'tictactoe'}/>
+      <Project number={1}proj={'githubUser'}/>
       <Footer />
     </Wrapper2>
   );

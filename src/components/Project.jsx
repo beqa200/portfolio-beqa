@@ -17,7 +17,7 @@ const Project = (props) => {
 
   if (project.name != undefined) {
     return (
-      <InnerWrapper1>
+      <InnerWrapper1 num={props.number}>
         <Image
           mobile={require("../assets/images/portfolio/mobile/" +
             project.screenshot)}

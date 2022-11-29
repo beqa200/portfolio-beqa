@@ -3,5 +3,10 @@
     "name": "Tic Tac Toe",
     "screenshot": "tic_tac_toe.png",
     "info": "Tic Tac Toe's project was the most challenging task I have done before. User can play against another user and CPU also. It's fully responsive so you can view the optimal layout for the game depending on their device's screen size."
+  },
+  "githubUser": {
+    "name": "GitHub User Search",
+    "screenshot": "github.png",
+    "info": "User can search any person who is logged in a Github and switch theme from dark to light. It was fist time where I used data from API like asynchronous functaion and await keywords"
   }
 }
