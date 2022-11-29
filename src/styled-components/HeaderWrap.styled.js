@@ -12,9 +12,8 @@ const HeaderWrap = styled.header`
     width: 24px;
     height: ${(props) => (props.hamb == true ? "20px" : "13px")};
   }
-  div {
+  .nav {
     display: none;
-    
   }
 
   @media (min-width: 740px) {
@@ -23,7 +22,7 @@ const HeaderWrap = styled.header`
     .hamburger {
       display: none;
     }
-    div {
+    .nav {
       display: flex;
       justify-content: space-between;
       width: 300px;

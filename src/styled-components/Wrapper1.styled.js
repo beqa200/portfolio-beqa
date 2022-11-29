@@ -62,28 +62,28 @@ const Wrapper1 = styled.div`
     height: 800px;
 
     @media (min-width: 740px) {
-      height: 1120px;
+      height: 380px;
     }
 
     @media (min-width: 1350px) {
       height: 680px;
     }
-    .profile {
-      display: none;
-      @media (min-width: 1350px) {
-        display: block;
-        max-width: 600px;
-      }
-    }
+
     .text {
       margin-top: 30px;
       border-top: 1px solid #d0c8c7;
 
+      @media (min-width: 740px) {
+        margin-top: -380px;
+      }
       @media (min-width: 1350px) {
         margin-top: -610px;
       }
-
       h1 {
+        @media (min-width: 740px) {
+          margin-left: 370px;
+          font-size: 70px;
+        }
         @media (min-width: 1350px) {
           margin-left: 620px;
           font-size: 100px;
@@ -94,7 +94,9 @@ const Wrapper1 = styled.div`
         margin-top: 28px;
         padding-bottom: 24px;
         @media (min-width: 740px) {
-          font-size: 18px;
+          font-size: 15px;
+          margin-left: 370px;
+          margin-top: 2px;
         }
 
         @media (min-width: 1350px) {
@@ -104,6 +106,9 @@ const Wrapper1 = styled.div`
       }
     }
     button {
+      @media (min-width: 740px) {
+        margin-left: 370px;
+      }
       @media (min-width: 1350px) {
         margin-left: 620px;
         margin-top: 8px;
@@ -129,7 +134,6 @@ const Wrapper1 = styled.div`
         font-size: 40px;
         width: 340px;
         margin: 0px;
-       
       }
     }
   }

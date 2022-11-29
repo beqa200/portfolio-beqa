@@ -10,10 +10,12 @@ const Box = styled.div`
   margin-top: 250px;
   right: 0px;
   position: absolute;
+  border-radius: 10px;
   .link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
   }
 `;
 
