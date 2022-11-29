@@ -11,13 +11,13 @@ const Images = styled.div`
   }
   .tablet {
     display: none;
-    width: 700px;
+    max-width: 700px;
   }
 
   .desktop {
     display: none;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 740px) {
     .mobile {
       display: none;
     }

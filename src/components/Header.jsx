@@ -18,6 +18,11 @@ const Header = () => {
         }}
       />
       {hamb == true ? <MenuBox /> : null}
+      <div>
+        <p>HOME</p>
+        <p>PORTFOLIO</p>
+        <p>CONTACT ME</p>
+      </div>
     </HeaderWrap>
   );
 };

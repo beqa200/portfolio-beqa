@@ -13,8 +13,7 @@ import StyledButtons from "../styled-components/Buttons.styled";
 const HomeMain = () => {
   return (
     <Wrapper1>
-      
-
+     
       <h1>Hey, I’m Beka Maisuradze, Front-End Developer.</h1>
       <a href="#about">
         <button className="about-button">

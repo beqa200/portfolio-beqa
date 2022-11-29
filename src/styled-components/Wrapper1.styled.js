@@ -3,13 +3,18 @@ import styled from "styled-components";
 const Wrapper1 = styled.div`
   width: 311px;
   margin: auto;
-
+  @media (min-width: 740px) {
+    width: 700px;
+  }
   h1 {
     margin: auto;
     font-size: 40px;
     margin-top: 20px;
-  }
 
+    @media (min-width: 740px) {
+      font-size: 100px;
+    }
+  }
   .about-button {
     display: flex;
     align-items: center;
@@ -21,9 +26,16 @@ const Wrapper1 = styled.div`
     height: 48px;
     border: none;
     margin-top: 32px;
-
+    @media (min-width: 740px) {
+      width: 240px;
+      height: 70px;
+      font-size: 16px;
+    }
     .div1 {
       width: 48px;
+      @media (min-width: 740px) {
+        width: 60px;
+      }
     }
 
     p {
@@ -41,6 +53,11 @@ const Wrapper1 = styled.div`
     margin-top: 70px;
     border-bottom: 1px solid #d0c8c7;
     height: 800px;
+
+    @media (min-width: 740px) {
+      height: 1120px;
+    }
+
     .text {
       margin-top: 30px;
       border-top: 1px solid #d0c8c7;
@@ -49,6 +66,9 @@ const Wrapper1 = styled.div`
         opacity: 0.8;
         margin-top: 28px;
         padding-bottom: 24px;
+        @media (min-width: 740px) {
+          font-size: 18px;
+        }
       }
     }
   }
