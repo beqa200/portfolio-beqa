@@ -14,6 +14,7 @@ const HeaderWrap = styled.header`
   }
   div {
     display: none;
+    
   }
 
   @media (min-width: 740px) {
@@ -26,7 +27,13 @@ const HeaderWrap = styled.header`
       display: flex;
       justify-content: space-between;
       width: 300px;
+      .link {
+        text-decoration: none;
+      }
     }
+  }
+  @media (min-width: 1350px) {
+    width: 1130px;
   }
 `;
 

@@ -6,6 +6,9 @@ const Wrapper1 = styled.div`
   @media (min-width: 740px) {
     width: 700px;
   }
+  @media (min-width: 1350px) {
+    width: 1130px;
+  }
   h1 {
     margin: auto;
     font-size: 40px;
@@ -13,6 +16,10 @@ const Wrapper1 = styled.div`
 
     @media (min-width: 740px) {
       font-size: 100px;
+    }
+
+    @media (min-width: 1350px) {
+      font-size: 140px;
     }
   }
   .about-button {
@@ -58,10 +65,30 @@ const Wrapper1 = styled.div`
       height: 1120px;
     }
 
+    @media (min-width: 1350px) {
+      height: 680px;
+    }
+    .profile {
+      display: none;
+      @media (min-width: 1350px) {
+        display: block;
+        max-width: 600px;
+      }
+    }
     .text {
       margin-top: 30px;
       border-top: 1px solid #d0c8c7;
 
+      @media (min-width: 1350px) {
+        margin-top: -610px;
+      }
+
+      h1 {
+        @media (min-width: 1350px) {
+          margin-left: 620px;
+          font-size: 100px;
+        }
+      }
       p {
         opacity: 0.8;
         margin-top: 28px;
@@ -69,6 +96,17 @@ const Wrapper1 = styled.div`
         @media (min-width: 740px) {
           font-size: 18px;
         }
+
+        @media (min-width: 1350px) {
+          font-size: 25px;
+          margin-left: 620px;
+        }
+      }
+    }
+    button {
+      @media (min-width: 1350px) {
+        margin-left: 620px;
+        margin-top: 8px;
       }
     }
   }
@@ -77,9 +115,22 @@ const Wrapper1 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 740px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: -50px;
+    }
     h1 {
       text-align: center;
       padding-bottom: 40px;
+      @media (min-width: 740px) {
+        font-size: 40px;
+        width: 340px;
+        margin: 0px;
+       
+      }
     }
   }
 `;

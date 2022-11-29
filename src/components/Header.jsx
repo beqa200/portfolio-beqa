@@ -3,6 +3,7 @@ import close from "../assets/images/icons/close.svg";
 import hamburger from "../assets/images/icons/hamburger.svg";
 import HeaderWrap from "../styled-components/HeaderWrap.styled";
 import MenuBox from "./MenuBox";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
@@ -19,9 +20,9 @@ const Header = () => {
       />
       {hamb == true ? <MenuBox /> : null}
       <div>
-        <p>HOME</p>
-        <p>PORTFOLIO</p>
-        <p>CONTACT ME</p>
+        <Link className="link">HOME</Link>
+        <Link className="link">PORTFOLIO</Link>
+        <Link className="link">CONTACT ME</Link>
       </div>
     </HeaderWrap>
   );

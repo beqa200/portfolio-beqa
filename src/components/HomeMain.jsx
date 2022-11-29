@@ -27,8 +27,8 @@ const HomeMain = () => {
         <Image
           mobile={mobileProfile}
           tablet={tabletProfile}
-          desktop={desktopProfile}
         />
+        <img className="profile" src ={desktopProfile} />
         <div className="text">
           <h1>About Me</h1>
           <p>
