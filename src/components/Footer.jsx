@@ -4,6 +4,7 @@ import github from "../assets/images/icons/github.svg";
 import twitter from "../assets/images/icons/twitter.svg";
 import linkedin from "../assets/images/icons/linkedin.svg";
 import { Link } from "react-router-dom";
+import Index from "../pages/IndexPortfolio";
 const Footer = () => {
   return (
     <FooterWrap>
@@ -11,7 +12,7 @@ const Footer = () => {
       <Link className="link" to="/">
         HOME
       </Link>
-      <Link className="link" to="/">
+      <Link className="link" to="/portfolio_index" element={<Index />}>
         PORTFOLIO
       </Link>
       <Link className="link" to="/">
@@ -25,7 +26,10 @@ const Footer = () => {
         <a href="https://twitter.com/BeqaMaisuradze7" target="_blank">
           <img src={twitter} />
         </a>
-        <a href="https://www.linkedin.com/in/beqa-maisuradze-76a730234/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/beqa-maisuradze-76a730234/"
+          target="_blank"
+        >
           <img src={linkedin} />
         </a>
       </div>

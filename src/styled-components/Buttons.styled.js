@@ -7,6 +7,11 @@ const StyledButtons = styled.button`
   border: 1px solid #33323d;
   letter-spacing: 2px;
   font-size: 12px;
+
+  &:hover {
+    background-color: #33323d;
+    color: white;
+  }
 `;
 
 export default StyledButtons;

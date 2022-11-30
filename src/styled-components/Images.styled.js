@@ -11,12 +11,14 @@ const Images = styled.div`
   }
   .tablet {
     display: none;
+    max-width: 350px;
   }
 
   .desktop {
     display: none;
+    max-width: 600px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 740px) {
     .mobile {
       display: none;
     }
@@ -27,6 +29,19 @@ const Images = styled.div`
 
     .desktop {
       display: none;
+    }
+  }
+  @media (min-width: 1350px) {
+    .mobile {
+      display: none;
+    }
+
+    .tablet {
+      display: none;
+    }
+
+    .desktop {
+      display: initial;
     }
   }
 `;
