@@ -3,7 +3,7 @@ export const DATA = [
     id: 1,
     name: "Tic Tac Toe",
     screenshot: "tic_tac_toe.png",
-    info: "Tic Tac Toe's project was the most challenging task I have done before. User can play against another user and CPU also. It's fully responsive so you can view the optimal layout for the game depending on their device's screen size."
+    info: "Tic Tac Toe's project was the most challenging task I have done before. User can play against another user and CPU also. It's fully responsive so you can view the optimal layout for the game depending on your device's screen size."
   },
   {
     id: 2,

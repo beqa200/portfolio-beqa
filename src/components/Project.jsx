@@ -1,6 +1,4 @@
 import { InnerWrapper1, StyledButtons } from "../styled-components";
-import { useState } from "react";
-import { useEffect } from "react";
 
 import Image from "./Images";
 const Project = (props) => {

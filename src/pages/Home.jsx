@@ -24,8 +24,12 @@ const Home = () => {
           </button>
         </a>
         <div id="about">
-          <Image mobile={mobileProfile} tablet={tabletProfile} desktop={desktopProfile}/>
-         
+          <Image
+            mobile={mobileProfile}
+            tablet={tabletProfile}
+            desktop={desktopProfile}
+          />
+
           <div className="text">
             <h1>About Me</h1>
             <p>

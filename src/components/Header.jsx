@@ -1,8 +1,5 @@
-import logo from "../assets/images/logo.svg";
-import close from "../assets/images/icons/close.svg";
-import hamburger from "../assets/images/icons/hamburger.svg";
-import HeaderWrap from "../styled-components/HeaderWrap.styled";
-import MenuBox from "./MenuBox";
+import {logo, close, hamburger} from "../assets"
+import { HeaderWrap, MenuBox } from "../styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Index from "../pages/IndexPortfolio";
@@ -21,8 +18,12 @@ const Header = () => {
       />
       {hamb == true ? <MenuBox /> : null}
       <div className="nav">
-        <Link className="link" to="/">HOME</Link>
-        <Link className="link" to="/portfolio_index" element={<Index />}>PORTFOLIO</Link>
+        <Link className="link" to="/">
+          HOME
+        </Link>
+        <Link className="link" to="/portfolio_index" element={<Index />}>
+          PORTFOLIO
+        </Link>
         <Link className="link">CONTACT ME</Link>
       </div>
     </HeaderWrap>

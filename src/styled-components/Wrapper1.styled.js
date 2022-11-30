@@ -9,7 +9,17 @@ const Wrapper1 = styled.div`
   @media (min-width: 1350px) {
     width: 1130px;
   }
+
+  @keyframes anim {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   h1 {
+    animation: anim 1.5s linear 0s forwards alternate;
     margin: auto;
     font-size: 40px;
     margin-top: 20px;

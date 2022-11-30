@@ -1,8 +1,5 @@
 import FooterWrap from "../styled-components/FooterWrap.styled";
-import logo from "../assets/images/logo.svg";
-import github from "../assets/images/icons/github.svg";
-import twitter from "../assets/images/icons/twitter.svg";
-import linkedin from "../assets/images/icons/linkedin.svg";
+import {logo, github, twitter, linkedin} from "../assets"
 import { Link } from "react-router-dom";
 import Index from "../pages/IndexPortfolio";
 const Footer = () => {
