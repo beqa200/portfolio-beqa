@@ -1,16 +1,29 @@
-import Box from "../styled-components/MenuBox.styled";
+import { Box } from "../styled-components";
 import { Link } from "react-router-dom";
 import Index from "../pages/IndexPortfolio";
-const MenuBox = () => {
+const MenuBox = (props) => {
   return (
     <Box>
-      <Link to="/" className="link">
+      <Link
+        to="/"
+        className="link"
+        onClick={() => {
+          props.setAppear(true);
+        }}
+      >
         HOME
       </Link>
-      <Link to="/portfolio_index" element={<Index />} className="link">
+      <Link
+        to="/portfolio_index"
+        onClick={() => {
+          props.setAppear(true);
+        }}
+        element={<Index />}
+        className="link"
+      >
         PORTFOLIO
       </Link>
-      <Link to="/" className="link">
+      <Link to="/contact" className="link">
         CONTACT ME
       </Link>
     </Box>

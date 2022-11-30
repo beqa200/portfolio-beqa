@@ -11,6 +11,7 @@ const Box = styled.div`
   right: 0px;
   position: absolute;
   border-radius: 10px;
+  z-index: 1;
   .link {
     color: #ffffff;
     text-decoration: none;

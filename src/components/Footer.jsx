@@ -12,7 +12,7 @@ const Footer = () => {
       <Link className="link" to="/portfolio_index" element={<Index />}>
         PORTFOLIO
       </Link>
-      <Link className="link" to="/">
+      <Link className="link" to="/contact">
         CONTACT ME
       </Link>
 

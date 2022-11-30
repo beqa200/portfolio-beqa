@@ -1,5 +1,5 @@
 import { InnerWrapper1, StyledButtons } from "../styled-components";
-
+import { Link } from "react-router-dom";
 import Image from "./Images";
 const Project = (props) => {
   return (
@@ -15,7 +15,9 @@ const Project = (props) => {
       <div className="info">
         <h1>{props.name}</h1>
         <p>{props.info}</p>
-        <StyledButtons width={"175px"}>VIEW PROJECT</StyledButtons>
+        <Link to="/">
+          <StyledButtons width={"175px"}>VIEW PROJECT</StyledButtons>
+        </Link>
       </div>
     </InnerWrapper1>
   );

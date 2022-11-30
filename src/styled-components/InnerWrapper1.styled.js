@@ -19,7 +19,7 @@ const InnerWrapper1 = styled.div`
   img {
     width: 300px;
     height: 320px;
-  
+    box-shadow: 10px 5px 5px grey;
     border-radius: 10px;
     @media (min-width: 740px) {
       max-width: 400px;
