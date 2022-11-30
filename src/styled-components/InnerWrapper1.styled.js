@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const InnerWrapper1 = styled.div`
   margin: auto;
+  margin-top: 15px;
   @media (min-width: 740px) {
     display: flex;
     justify-content: space-between;
@@ -11,13 +12,14 @@ const InnerWrapper1 = styled.div`
   }
   @media (min-width: 1350px) {
     width: 1130px;
+    height: 380px;
     justify-content: space-evenly;
   }
 
   img {
     width: 300px;
     height: 320px;
-    margin-top: 30px;
+  
     border-radius: 10px;
     @media (min-width: 740px) {
       max-width: 400px;
