@@ -1,16 +1,25 @@
-import { Header, Footer, Image, Project } from "../components";
+import { Header, Footer, Project } from "../components";
 import { Wrapper2, StyledButtons } from "../styled-components";
+import { projects } from "../data";
+import { Link } from "react-router-dom";
 const Index = () => {
   return (
     <Wrapper2>
       <Header />
-      <Project number={0} proj={"tictactoe"} />
-      <Project number={1} proj={"githubUser"} />
-      <Project number={2} proj={"calculator"} />
-      <Project number={3} proj={"pricingcomponent"} />
+      {projects.map((project) => (
+        <Project
+          name={project.name}
+          screenshot={project.screenshot}
+          info={project.info}
+          id={project.id}
+        />
+      ))}
+
       <div className="contact">
         <h1>Want to see more projects?</h1>
-        <StyledButtons width={"162px"}>Visit GitHub</StyledButtons>
+        <a href="https://github.com/beqa200" target="_blank">
+          <StyledButtons width={"162px"}>Visit GitHub</StyledButtons>
+        </a>
       </div>
       <Footer />
     </Wrapper2>

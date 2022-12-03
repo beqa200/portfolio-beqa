@@ -24,8 +24,12 @@ const Home = () => {
           </button>
         </a>
         <div id="about">
-          <Image mobile={mobileProfile} tablet={tabletProfile} desktop={desktopProfile}/>
-         
+          <Image
+            mobile={mobileProfile}
+            tablet={tabletProfile}
+            desktop={desktopProfile}
+          />
+
           <div className="text">
             <h1>About Me</h1>
             <p>
@@ -47,7 +51,9 @@ const Home = () => {
 
         <div className="contact">
           <h1>Interested in doing a project together?</h1>
-          <StyledButtons width={"162px"}>CONTACT ME</StyledButtons>
+          <Link to="/contact">
+            <StyledButtons width={"162px"}>CONTACT ME</StyledButtons>
+          </Link>
         </div>
       </Wrapper1>
       <Footer />

@@ -5,9 +5,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  color: #33323D;
+  color: #33323d;
   scroll-behavior: smooth;
-
 }
 
 h1 {
@@ -20,8 +19,10 @@ p {
 
 body {
   width: 100vw;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   overflow-x: hidden;
+  max-width: 1600px;
+  margin: auto;
 }
 
 button {
