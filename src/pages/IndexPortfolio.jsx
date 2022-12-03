@@ -1,12 +1,12 @@
 import { Header, Footer, Project } from "../components";
 import { Wrapper2, StyledButtons } from "../styled-components";
-import { DATA } from "../data";
+import { projects } from "../data";
 import { Link } from "react-router-dom";
 const Index = () => {
   return (
     <Wrapper2>
       <Header />
-      {DATA.map((project) => (
+      {projects.map((project) => (
         <Project
           name={project.name}
           screenshot={project.screenshot}

@@ -6,7 +6,7 @@ const Contact = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
-console.log(props.appear);
+
   return (
     <Wrapper3 isAppear={props.appear}>
       <Header setAppear={props.setAppear} />
