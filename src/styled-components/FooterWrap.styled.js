@@ -8,7 +8,7 @@ const FooterWrap = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
+  
   @media (min-width: 740px) {
     height: 70px;
     flex-direction: row;

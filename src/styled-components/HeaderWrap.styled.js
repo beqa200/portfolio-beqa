@@ -8,6 +8,7 @@ const HeaderWrap = styled.header`
   align-items: center;
   margin: 32px auto;
   position: relative;
+  
   .hamburger {
     width: 24px;
     height: ${(props) => (props.hamb == true ? "20px" : "13px")};

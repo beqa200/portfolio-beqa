@@ -1,13 +1,16 @@
 import { Header, Footer, Project } from "../components";
 import { Wrapper2, StyledButtons } from "../styled-components";
-import { projects } from "../data";
+
 import { Link } from "react-router-dom";
-const Index = () => {
+const Index = (props) => {
   return (
-    <Wrapper2>
+    <div>
+<Wrapper2>
       <Header />
-      {projects.map((project) => (
+      {props.projects.map((project) => (
         <Project
+          setId={props.setId}
+          linkName={project.linkName}
           name={project.name}
           screenshot={project.screenshot}
           info={project.info}
@@ -23,6 +26,8 @@ const Index = () => {
       </div>
       <Footer />
     </Wrapper2>
+    </div>
+    
   );
 };
 

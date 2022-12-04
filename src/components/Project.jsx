@@ -1,6 +1,7 @@
 import { InnerWrapper1, StyledButtons } from "../styled-components";
 import { Link } from "react-router-dom";
 import Image from "./Images";
+import { useState } from "react";
 const Project = (props) => {
   return (
     <InnerWrapper1 num={props.id}>
@@ -15,7 +16,12 @@ const Project = (props) => {
       <div className="info">
         <h1>{props.name}</h1>
         <p>{props.info}</p>
-        <Link to="/">
+        <Link
+          to={"/portfolio_index/" + props.linkName}
+          onClick={() => {
+            props.setId(props.id);
+          }}
+        >
           <StyledButtons width={"175px"}>VIEW PROJECT</StyledButtons>
         </Link>
       </div>
