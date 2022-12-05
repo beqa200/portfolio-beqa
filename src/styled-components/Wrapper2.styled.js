@@ -7,6 +7,7 @@ const Wrapper2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media (min-width: 740px) {
       flex-direction: row;
       justify-content: space-around;
@@ -14,6 +15,7 @@ const Wrapper2 = styled.div`
       margin-top: 30px;
       margin-bottom: -50px;
     }
+    
     h1 {
       margin-top: 20px;
       text-align: center;

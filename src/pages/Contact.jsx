@@ -26,9 +26,18 @@ const Contact = (props) => {
               form.
             </p>
             <div className="icons">
-              <img src={github} />
-              <img src={twitter} />
-              <img src={linkedin} />
+              <a href="https://github.com/beqa200" target="_blank">
+                <img src={github} />
+              </a>
+              <a href="https://twitter.com/BeqaMaisuradze7" target="_blank">
+                <img src={twitter} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/beqa-maisuradze-76a730234/"
+                target="_blank"
+              >
+                <img src={linkedin} />
+              </a>
             </div>
           </div>
         </div>
@@ -82,9 +91,10 @@ const Contact = (props) => {
             </button>
           </form>
         </div>
+        <h1 className="thank">Thank you!</h1>
       </div>
 
-      <Footer />
+      <Footer setAppear={props.setAppear} />
     </Wrapper3>
   );
 };

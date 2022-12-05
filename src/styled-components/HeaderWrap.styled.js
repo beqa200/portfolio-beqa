@@ -8,10 +8,12 @@ const HeaderWrap = styled.header`
   align-items: center;
   margin: 32px auto;
   position: relative;
+
   .hamburger {
     width: 24px;
     height: ${(props) => (props.hamb == true ? "20px" : "13px")};
   }
+
   .nav {
     display: none;
   }
@@ -22,15 +24,18 @@ const HeaderWrap = styled.header`
     .hamburger {
       display: none;
     }
+
     .nav {
       display: flex;
       justify-content: space-between;
       width: 300px;
+
       .link {
         text-decoration: none;
       }
     }
   }
+
   @media (min-width: 1350px) {
     width: 1130px;
   }

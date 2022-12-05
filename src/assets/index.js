@@ -8,3 +8,5 @@ export { default as github } from "./images/icons/github.svg";
 export { default as hamburger } from "./images/icons/hamburger.svg";
 export { default as linkedin } from "./images/icons/linkedin.svg";
 export { default as twitter } from "./images/icons/twitter.svg";
+export { default as arrowLeft } from "./images/icons/arrow-left.svg";
+export { default as arrowRight } from "./images/icons/arrow-right.svg";

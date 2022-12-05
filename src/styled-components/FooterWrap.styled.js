@@ -13,6 +13,7 @@ const FooterWrap = styled.footer`
     height: 70px;
     flex-direction: row;
   }
+  
   img {
     filter: invert(100%) sepia(38%) saturate(2%) hue-rotate(242deg)
       brightness(111%) contrast(101%);

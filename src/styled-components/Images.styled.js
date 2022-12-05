@@ -9,6 +9,7 @@ const Images = styled.div`
   .mobile {
     width: 311px;
   }
+
   .tablet {
     display: none;
     max-width: 350px;
@@ -18,6 +19,7 @@ const Images = styled.div`
     display: none;
     max-width: 600px;
   }
+  
   @media (min-width: 740px) {
     .mobile {
       display: none;

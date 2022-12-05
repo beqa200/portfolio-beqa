@@ -2,7 +2,7 @@ import { logo, close, hamburger } from "../assets";
 import { HeaderWrap } from "../styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Index from "../pages/IndexPortfolio";
+
 import MenuBox from "./MenuBox";
 const Header = (props) => {
   const [hamb, setHamb] = useState(false);
@@ -30,8 +30,7 @@ const Header = (props) => {
         </Link>
         <Link
           className="link"
-          to="/portfolio_index"
-          element={<Index />}
+          to="/portfolio"
           onClick={() => {
             props.setAppear(true);
           }}
