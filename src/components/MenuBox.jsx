@@ -14,11 +14,11 @@ const MenuBox = (props) => {
         HOME
       </Link>
       <Link
-        to="/portfolio_index"
+        to="/portfolio"
         onClick={() => {
           props.setAppear(true);
         }}
-        element={<Index />}
+       
         className="link"
       >
         PORTFOLIO

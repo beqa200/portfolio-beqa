@@ -93,13 +93,14 @@ const Wrapper3 = styled.div`
     }
   }
   .thank {
-
+  
     display: none;
-    font-size: 140px;
+    font-size: 40px;
     align-items: center;
     margin-bottom: -50px;
+    display: ${(props) => (props.isAppear == true ? "none" : "initial")};
     @media (min-width: 740px) {
-      display: ${(props) => (props.isAppear == true ? "none" : "initial")};
+      font-size: 140px;
     }
     @media (min-width: 1350px) {
       width: 1130px;

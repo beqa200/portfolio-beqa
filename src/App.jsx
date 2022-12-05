@@ -13,22 +13,13 @@ function App() {
   const [projectName, setProjectName] = useState(" ");
   const [previous, setPrevious] = useState();
 
-  useEffect(() => {
-    projects.map((project) => {
-      if (project.id == id) {
- 
-        setProjectName(project.linkName);
-      }
-    });
-  }, [id]);
-
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
-            path="/portfolio_index"
+            path="/portfolio"
             element={
               <Index
                 id={id}
@@ -45,22 +36,7 @@ function App() {
 
           {projects.map((project) => {
             return (
-              <Route
-                path={"/portfolio_index/" + project.linkName}
-                element={
-                  <PortfolioDetail
-                    name={project.name}
-                    screenshot={project.screenshot}
-                    info={project.info}
-                    siteLink={project.url}
-                    preview={project.preview}
-                    link = {project.linkName}
-                    projects={projects}
-                    id={project.id}
-                    url={project.url}
-                  />
-                }
-              />
+              <Route path={"/projects/:name"} element={<PortfolioDetail />} />
             );
           })}
         </Routes>

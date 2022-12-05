@@ -11,7 +11,7 @@ const Footer = (props) => {
           }}>
         HOME
       </Link >
-      <Link className="link" to="/portfolio_index" onClick={() => {
+      <Link className="link" to="/portfolio" onClick={() => {
             props.setAppear(true);
           }} element={<Index />}>
         PORTFOLIO

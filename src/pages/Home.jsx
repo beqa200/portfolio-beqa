@@ -43,7 +43,7 @@ const Home = () => {
               spending time with friends. I’d love you to check out my work.
             </p>
           </div>
-          <Link to="/portfolio_index" element={<Index />}>
+          <Link to="/portfolio" element={<Index />}>
             {" "}
             <StyledButtons width={"202px"}>GO TO PORTFOLIO</StyledButtons>
           </Link>

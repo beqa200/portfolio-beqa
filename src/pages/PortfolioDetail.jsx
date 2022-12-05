@@ -3,8 +3,14 @@ import { StyledButtons } from "../styled-components";
 import Wrapper4 from "styled-components/Wrapper4.styled";
 import { Link } from "react-router-dom";
 import { arrowLeft, arrowRight } from "../assets";
+import { useParams } from "react-router-dom";
+import { projects } from "data";
 const PortfolioDetail = (props) => {
-  console.log(props.siteLink);
+  const params = useParams();
+
+  const project = projects.find((proj) => proj.linkName == params.name);
+  console.log("result " + params.name);
+
   return (
     <div>
       <Header />
@@ -12,21 +18,21 @@ const PortfolioDetail = (props) => {
         <div className="first-image">
           <Image
             mobile={require("../assets/images/portfolio/mobile/" +
-              props.preview)}
+              project.preview)}
             tablet={require("../assets/images/portfolio/tablet/" +
-              props.preview)}
+              project.preview)}
             desktop={require("../assets/images/portfolio/desktop/" +
-              props.preview)}
+              project.preview)}
           />
         </div>
 
         <div className="info">
           <div>
-            <h1>{props.name}</h1>
-            <p>{props.info}</p>
+            <h1>{project.name}</h1>
+            <p>{project.info}</p>
           </div>
 
-          <a href={props.url}>
+          <a href={project.url}>
             <StyledButtons width={"162px"}>VISIT WEBSITE</StyledButtons>
           </a>
         </div>
@@ -44,11 +50,11 @@ const PortfolioDetail = (props) => {
           <h1>Static Previews</h1>
           <Image
             mobile={require("../assets/images/portfolio/mobile/" +
-              props.preview)}
+              project.preview)}
             tablet={require("../assets/images/portfolio/tablet/" +
-              props.preview)}
+              project.preview)}
             desktop={require("../assets/images/portfolio/desktop/" +
-              props.preview)}
+              project.preview)}
           />
         </div>
 
@@ -56,32 +62,30 @@ const PortfolioDetail = (props) => {
           <Link
             style={{ textDecoration: "none", width: "50%" }}
             to={
-              props.id != 1
-                ? "/portfolio_index/" + props.projects[props.id - 2].linkName
+              project.id != 1
+                ? "/projects/" + projects[project.id - 2].linkName
                 : ""
             }
           >
             <div className="pervious">
               <img src={arrowLeft} />
-              <h2>
-                {props.id != 1 ? props.projects[props.id - 2].name : null}
-              </h2>
+              <h2>{project.id != 1 ? projects[project.id - 2].name : null}</h2>
               <p>Previous Project</p>
             </div>
           </Link>
           <Link
             style={{ textDecoration: "none", width: "50%" }}
             to={
-              props.id != props.projects.length
-                ? "/portfolio_index/" + props.projects[props.id].linkName
+              project.id != projects.length
+                ? "/projects/" + projects[project.id].linkName
                 : ""
             }
           >
             <div className="next">
               <img src={arrowRight} />
               <h2 className="next">
-                {props.id != props.projects.length
-                  ? props.projects[props.id].name
+                {project.id != projects.length
+                  ? projects[project.id].name
                   : null}
               </h2>
               <p>Next Project</p>

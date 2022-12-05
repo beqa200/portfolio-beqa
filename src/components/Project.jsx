@@ -17,7 +17,7 @@ const Project = (props) => {
         <h1>{props.name}</h1>
         <p>{props.info}</p>
         <Link
-          to={"/portfolio_index/" + props.linkName}
+          to={"/projects/" + props.linkName}
           onClick={() => {
             props.setId(props.id);
           }}
