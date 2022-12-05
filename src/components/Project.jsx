@@ -1,7 +1,7 @@
 import { InnerWrapper1, StyledButtons } from "../styled-components";
 import { Link } from "react-router-dom";
 import Image from "./Images";
-import { useState } from "react";
+
 const Project = (props) => {
   return (
     <InnerWrapper1 num={props.id}>

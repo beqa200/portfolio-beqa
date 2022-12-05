@@ -1,6 +1,5 @@
 import { Box } from "../styled-components";
 import { Link } from "react-router-dom";
-import Index from "../pages/IndexPortfolio";
 const MenuBox = (props) => {
   return (
     <Box>
@@ -18,7 +17,6 @@ const MenuBox = (props) => {
         onClick={() => {
           props.setAppear(true);
         }}
-       
         className="link"
       >
         PORTFOLIO

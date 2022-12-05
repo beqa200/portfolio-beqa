@@ -9,7 +9,6 @@ const PortfolioDetail = (props) => {
   const params = useParams();
 
   const project = projects.find((proj) => proj.linkName == params.name);
-  console.log("result " + params.name);
 
   return (
     <div>
@@ -32,7 +31,7 @@ const PortfolioDetail = (props) => {
             <p>{project.info}</p>
           </div>
 
-          <a href={project.url}>
+          <a href={project.url} target="_blank">
             <StyledButtons width={"162px"}>VISIT WEBSITE</StyledButtons>
           </a>
         </div>

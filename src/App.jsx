@@ -9,38 +9,20 @@ import { useEffect } from "react";
 import ScrollToTop from "ScrollOnTop";
 function App() {
   const [appear, setAppear] = useState(true);
-  const [id, setId] = useState();
-  const [projectName, setProjectName] = useState(" ");
-  const [previous, setPrevious] = useState();
 
   return (
     <>
       <BrowserRouter>
-      <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
-          
           <Route path="/" element={<Home />} />
-          <Route
-            path="/portfolio"
-            element={
-              <Index
-                id={id}
-                setId={setId}
-                projectName={projectName}
-                projects={projects}
-              />
-            }
-          />
+          <Route path="/portfolio" element={<Index projects={projects} />} />
           <Route
             path="/contact"
             element={<Contact appear={appear} setAppear={setAppear} />}
           />
 
-          {projects.map((project) => {
-            return (
-              <Route path={"/projects/:name"} element={<PortfolioDetail />} />
-            );
-          })}
+          <Route path={"/projects/:name"} element={<PortfolioDetail />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -3,12 +3,15 @@ import styled from "styled-components";
 const Wrapper4 = styled.div`
   width: 311px;
   margin: auto;
+
   @media (min-width: 740px) {
     width: 700px;
   }
+
   @media (min-width: 1350px) {
     width: 1130px;
   }
+
   .first-image {
     display: flex;
     align-items: center;
@@ -31,12 +34,14 @@ const Wrapper4 = styled.div`
     border-top: 1px solid #d0c8c7;
     border-bottom: 1px solid #d0c8c7;
     height: 390px;
+
     @media (min-width: 740px) {
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: 280px;
     }
+
     @media (min-width: 740px) {
       div {
         width: 50%;
@@ -50,6 +55,7 @@ const Wrapper4 = styled.div`
         width: 100%;
       }
     }
+
     p {
       margin-top: 24px;
       line-height: 30px;
@@ -58,6 +64,7 @@ const Wrapper4 = styled.div`
         width: 100%;
       }
     }
+
     button {
       margin-top: 20px;
       @media (min-width: 740px) {
@@ -94,12 +101,14 @@ const Wrapper4 = styled.div`
       margin-right: 5px;
       margin-left: 5px;
     }
+
     p {
       font-size: 12px;
       opacity: 0.5;
       margin-right: 5px;
       margin-left: 5px;
     }
+
     img {
       width: 8px;
       height: 16px;
@@ -107,17 +116,18 @@ const Wrapper4 = styled.div`
       margin-right: 5px;
       margin-left: 5px;
     }
+
     div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: 140px;
-
       cursor: pointer;
+      
       &:hover {
         background-color: #ddd9d9;
         opacity: 0.8;
-        transition: 0.2s
+        transition: 0.2s;
       }
     }
 
@@ -128,9 +138,11 @@ const Wrapper4 = styled.div`
     .next {
       text-align: right;
       border-left: 1px solid #d0c8c7;
+
       h2 {
         border: none;
       }
+
       align-items: flex-end;
     }
   }
@@ -140,6 +152,7 @@ const Wrapper4 = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+
     @media (min-width: 740px) {
       flex-direction: row;
       justify-content: space-between;
@@ -147,10 +160,12 @@ const Wrapper4 = styled.div`
       margin-top: 30px;
       margin-bottom: -50px;
     }
+
     h1 {
       text-align: center;
       padding-bottom: 40px;
       width: 200px;
+
       @media (min-width: 740px) {
         font-size: 40px;
         width: 340px;

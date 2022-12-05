@@ -31,7 +31,6 @@ const Header = (props) => {
         <Link
           className="link"
           to="/portfolio"
-         
           onClick={() => {
             props.setAppear(true);
           }}
