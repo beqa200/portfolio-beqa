@@ -21,9 +21,12 @@ const PortfolioDetail = (props) => {
         </div>
 
         <div className="info">
-          <h1>{props.name}</h1>
-          <p>{props.info}</p>
-          <a href={props.siteLink}>
+          <div>
+            <h1>{props.name}</h1>
+            <p>{props.info}</p>
+          </div>
+
+          <a href={props.url}>
             <StyledButtons width={"162px"}>VISIT WEBSITE</StyledButtons>
           </a>
         </div>

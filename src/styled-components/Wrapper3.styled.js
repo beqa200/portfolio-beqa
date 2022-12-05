@@ -4,12 +4,15 @@ const Wrapper3 = styled.div`
   .body {
     width: 311px;
     margin: auto;
+    
+    
     @media (min-width: 740px) {
       width: 700px;
-      height: 780px;
+ 
     }
     @media (min-width: 1350px) {
       width: 1130px;
+      height: ${(props) => (props.isAppear == true ? "" : "507px")};
     }
 
     .touch {
@@ -47,8 +50,10 @@ const Wrapper3 = styled.div`
         justify-content: space-between;
       }
       h1 {
-        margin-top: 32px;
+        width: 220px;
+        margin-top: 20px;
         font-size: 40px;
+
       }
       form {
         @media (min-width: 1350px) {
@@ -85,6 +90,20 @@ const Wrapper3 = styled.div`
         font-size: 12px;
         letter-spacing: 2px;
       }
+    }
+  }
+  .thank {
+
+    display: none;
+    font-size: 140px;
+    align-items: center;
+    margin-bottom: -50px;
+    @media (min-width: 740px) {
+      display: ${(props) => (props.isAppear == true ? "none" : "initial")};
+    }
+    @media (min-width: 1350px) {
+      width: 1130px;
+      height: 200px;
     }
   }
 `;

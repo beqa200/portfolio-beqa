@@ -57,6 +57,7 @@ function App() {
                     link = {project.linkName}
                     projects={projects}
                     id={project.id}
+                    url={project.url}
                   />
                 }
               />

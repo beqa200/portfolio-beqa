@@ -5,7 +5,6 @@ const Wrapper4 = styled.div`
   margin: auto;
   @media (min-width: 740px) {
     width: 700px;
-    height: 780px;
   }
   @media (min-width: 1350px) {
     width: 1130px;
@@ -18,37 +17,69 @@ const Wrapper4 = styled.div`
     width: 280px;
     overflow: hidden;
     margin: auto;
-   
+
+    @media (min-width: 740px) {
+      width: 689px;
+      height: 280px;
+    }
+    @media (min-width: 1350px) {
+      max-width: 600px;
+    }
   }
   .info {
     margin-top: 40px;
     border-top: 1px solid #d0c8c7;
     border-bottom: 1px solid #d0c8c7;
     height: 390px;
-    h1 {
-        margin-top: 24px;
-        font-size: 35px;
+    @media (min-width: 740px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 280px;
     }
-    p{
-        margin-top: 24px;
-        line-height: 30px;
+    @media (min-width: 740px) {
+      div {
+        width: 50%;
+      }
+    }
+
+    h1 {
+      margin-top: 24px;
+      font-size: 35px;
+      @media (min-width: 740px) {
+        width: 100%;
+      }
+    }
+    p {
+      margin-top: 24px;
+      line-height: 30px;
+      @media (min-width: 740px) {
+        width: 50%;
+        width: 100%;
+      }
     }
     button {
-        margin-top: 20px;
+      margin-top: 20px;
+      @media (min-width: 740px) {
+        margin-left: -50%;
+      }
     }
   }
 
   .background {
     margin-top: 20px;
 
-    p{
-        margin-top: 28px;
-        line-height: 30px;
-        padding-bottom: 50px;
+    p {
+      margin-top: 28px;
+      line-height: 30px;
+      padding-bottom: 50px;
     }
 
     img {
-        margin-top: 40px;
+      margin-top: 40px;
+      @media (min-width: 740px) {
+        max-width: 100%;
+      }
     }
   }
   .slider {
@@ -56,19 +87,18 @@ const Wrapper4 = styled.div`
     display: flex;
     border-top: 1px solid #d0c8c7;
     border-bottom: 1px solid #d0c8c7;
-    
+
     h2 {
-        font-size: 24px;
-        font-weight: 400;
-        margin-right: 5px;
-        margin-left: 5px;
-        
+      font-size: 24px;
+      font-weight: 400;
+      margin-right: 5px;
+      margin-left: 5px;
     }
-    p{
-        font-size: 12px;
-         opacity: 0.5;
-         margin-right: 5px;
-         margin-left: 5px;
+    p {
+      font-size: 12px;
+      opacity: 0.5;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     img {
       width: 8px;
@@ -78,7 +108,6 @@ const Wrapper4 = styled.div`
       margin-left: 5px;
     }
     div {
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -87,6 +116,8 @@ const Wrapper4 = styled.div`
       cursor: pointer;
       &:hover {
         background-color: #ddd9d9;
+        opacity: 0.8;
+        transition: 0.2s
       }
     }
 
