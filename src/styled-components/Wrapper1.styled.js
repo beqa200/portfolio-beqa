@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Wrapper1 = styled.div`
   width: 311px;
   margin: auto;
+  scroll-behavior: smooth;
   @media (min-width: 740px) {
     width: 700px;
   }

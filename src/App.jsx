@@ -6,7 +6,7 @@ import PortfolioDetail from "pages/PortfolioDetail";
 import { useState } from "react";
 import { projects } from "./data";
 import { useEffect } from "react";
-
+import ScrollToTop from "ScrollOnTop";
 function App() {
   const [appear, setAppear] = useState(true);
   const [id, setId] = useState();
@@ -16,7 +16,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
+          
           <Route path="/" element={<Home />} />
           <Route
             path="/portfolio"
