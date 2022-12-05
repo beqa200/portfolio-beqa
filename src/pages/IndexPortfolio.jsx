@@ -8,6 +8,7 @@ const Index = (props) => {
         <Header />
         {props.projects.map((project) => (
           <Project
+            key={project.id}
             linkName={project.linkName}
             name={project.name}
             screenshot={project.screenshot}
