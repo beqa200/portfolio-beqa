@@ -10,6 +10,15 @@ export const projects = [
   },
   {
     id: 2,
+    name: "Interactive Credit Card Details Form",
+    linkName: "interactive-credit-card-details-form",
+    screenshot: "card_details/cardDetails.jpg",
+    info: "It was my first project with TypeScipt,  I learned different ways how to assigned correct types to the variables and functions. Also I used generics. Therefore, This project helps me to understand basics of TypeScript.",
+    preview: "card_details/cardDetails_preview.jpg",
+    url: "https://interactive-credit-card-details-form.vercel.app/",
+  },
+  {
+    id: 3,
     name: "GitHub User Search",
     linkName: "github-user-search",
     screenshot: "github/github.png",
@@ -18,25 +27,25 @@ export const projects = [
     url: "https://github-user-search-ashy.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Tip Calculator",
     linkName: "tip-calculator",
     screenshot: "calculator/calculator.png",
     info: "I made this project twice. First with Vanilla JS and next with ReactJS. User can Calculate the correct tip and total cost of the bill per person. It's fully responsive",
     preview: "calculator/calculator_preview.jpg",
-    url: "https://tip-calculator-app-react-orcin.vercel.app/"
+    url: "https://tip-calculator-app-react-orcin.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Interactive Pricing Component",
     linkName: "interactive-pricing-component",
     screenshot: "pricing_component/pricingcomponent.jpg",
     info: "I would like to share this project because It was first time where I used Tailwind CSS and I gained really good experience. Users can choose whichever package and price are accaptable for them",
     preview: "pricing_component/pricingcomponent_preview.png",
-    url: "https://beqa200.github.io/interactive-pricing-component/"
+    url: "https://beqa200.github.io/interactive-pricing-component/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Art Gallery",
     linkName: "art-gallery-website",
     screenshot: "art_gallery/artgallery.png",
