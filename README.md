@@ -62,4 +62,4 @@ after this you can use this file to deploy project on server.
 
 #
 ### Author
-* [LinkedIn](https://www.linkedin.com/in/beqa-maisuradze-76a730234/).
+* [LinkedIn](https://www.linkedin.com/in/beqa-maisuradze-76a730234/)
