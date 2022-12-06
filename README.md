@@ -8,7 +8,7 @@
 * [Getting Started](#Getting-Started)
 * [Project Structure](#Project-Structure)
 * [Deployment](#Deployment)
-* [Resources](#Resources)
+* [Author](#Author)
 
 #
 ### Prerequisites
